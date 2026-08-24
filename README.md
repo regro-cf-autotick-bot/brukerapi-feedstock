@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `brukerapi` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install brukerapi
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install brukerapi
 ```
 
-It is possible to list all of the versions of `brukerapi` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add brukerapi
+# for installing globally
+pixi global install brukerapi
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `brukerapi` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search brukerapi --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search brukerapi --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search brukerapi --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds brukerapi --channel conda-forge
 # List dependencies of `brukerapi`:
 mamba repoquery depends brukerapi --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
